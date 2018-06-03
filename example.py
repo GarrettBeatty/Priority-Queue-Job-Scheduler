@@ -6,7 +6,7 @@ class PrintJob(Job):
         super().__init__(priority)
     
     def run_job(self):
-        print("ran job with priority {}".format(self.priority))
+        print("ran job with priority {self.priority}")
 
 j1 = PrintJob(1)
 j2 = PrintJob(2)
